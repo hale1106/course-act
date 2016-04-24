@@ -1,1 +1,1 @@
-var Main=function(){};Main.prototype={constructor:"Main",init:function(){}};
+var Main=function(){};Main.prototype={constructor:"Main",init:function(){}},ls={on:function(n,o){console.log(n),o&&o(123)}},ls.on("data",function(n){console.log(n)});

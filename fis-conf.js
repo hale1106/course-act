@@ -33,19 +33,31 @@ fis.match('{css/*.css,css/*.less}', {
 
 fis.match('css/(*.png)',{
 	release:'images/$1'
-})
+});
 
 fis.match('src/(**)',{
     release:'$1'
-})
+});
 
 //过滤编绎文件
 fis.match('{./build,node_modules,abc.json,gulpfile.js,package.json}',{
     release:false
-})
+});
+
+ fis.match('{css/**,images/**}', {
+  useHash: true,
+  domain:'http://h5.flyfinger.com/demo'
+});
 
 
- fis.media('demo').match('*',{
- 	optimizer:null,
- 	useSprite:false
+
+fis.media('demo').match('*',{
+  optimizer:null,
+  useSprite:false,
+  useHash:false,
+  domain:false
+ });
+
+ fis.media('debug').match('{css/**,images/**}',{
+  domain:false
  })
