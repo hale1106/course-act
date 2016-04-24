@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-cache": "^0.4.4",
+    "gulp-exec": "^2.1.2",
+    "gulp-imagemin": "^2.4.0",
+    "imagemin-pngquant": "^4.2.2"
+  }
+}
